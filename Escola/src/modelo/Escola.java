@@ -10,16 +10,18 @@ package modelo;
  * @author Administrador
  */
 public class Escola {
-   private Integer codigo;
+   private int codigo;
    private String nome;
    private String endereco;
    private String sigla;
+   private int nr_aluno;
+   private Double area;
 
-    public Integer getCodigo() {
+    public int getCodigo() {
         return codigo;
     }
 
-    public void setCodigo(Integer codigo) {
+    public void setCodigo(int codigo) {
         this.codigo = codigo;
     }
 
@@ -47,10 +49,28 @@ public class Escola {
         this.sigla = sigla;
     }
 
+    public int getNr_aluno() {
+        return nr_aluno;
+    }
+
+    public void setNr_aluno(int nr_aluno) {
+        this.nr_aluno = nr_aluno;
+    }
+
+    public Double getArea() {
+        return area;
+    }
+
+    public void setArea(Double area) {
+        this.area = area;
+    }
+
     @Override
     public String toString() {
-        return  nome ;
+        return nome ;
     }
+
+    
    
    
 }
