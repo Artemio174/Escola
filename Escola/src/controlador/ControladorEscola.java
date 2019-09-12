@@ -22,9 +22,11 @@ public class ControladorEscola {
 
   public static void inserir(ManutencaoEscola man){
         Escola objeto = new Escola();
-        objeto.setSigla(man.jtfnome.getText());
+        objeto.setNome(man.jtfnome.getText());
         objeto.setEndereco(man.jtfendereco.getText());
-        objeto.setNome(man.jtfsigla.getText());
+        objeto.setSigla(man.jtfsigla.getText());
+        objeto.setNr_aluno(Integer.parseInt(man.jtfnr_aluno.getText()));
+        objeto.setArea(Double.parseDouble(man.jtfarea.getText()));
         
         boolean resultado = DaoEscola.inserir(objeto);
         if (resultado) {
